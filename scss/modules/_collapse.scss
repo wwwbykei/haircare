@@ -1,0 +1,45 @@
+// ---
+// modules - collapse
+// ---
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+// tr.collapse.in {
+//   display: table-row;
+// }
+// tbody.collapse.in {
+//   display: table-row-group;
+// }
+.btn-collapse{
+  position:absolute;
+  top:-4px;
+  right:-8px;
+  width:32px;
+  height:32px;
+  background-size: 12px;
+  background-position: 50% 50%;
+  &.collapsed{
+    @include bgi(icon/expand-more);
+  }
+  &:not(.collapsed){
+    @include bgi(icon/expand-less);
+  }
+}
+.text-partial{
+  font-size:1.4rem;
+  line-height: 2rem;
+  &.collapse{
+    &:not(.in){
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      max-height: 10rem;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+  }
+}

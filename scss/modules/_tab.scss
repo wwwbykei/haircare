@@ -1,0 +1,29 @@
+// ---
+// modules - tab
+// ---
+
+.tab-content{
+    > .tab-pane{
+		display: none;
+	}
+    > .active{
+		display:block;
+	}
+}
+.nav-tab-fill{
+	overflow:hidden;
+	li{
+		float: left;
+		&:not(:first-child){//.ml(4px);
+			// @media @desktop{.ml(12px)}
+		}
+		a{
+			@include fw-semibold;
+			//.btn-h32;.btn-outline;.btn-radius;
+			// @media @desktop{.btn-h40;min-width:108px;.btn-radius}
+		}
+		&.active{
+			// a{.btn-fill-secondary}
+		}
+	}
+}

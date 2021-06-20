@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<title>설문결과 : 탈모관리서비스</title>
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<script src="js/IE9.js"></script>
+<![endif]-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/collapse.js"></script>
+<script src="js/tab.js"></script>
+</head>
+
+<body class="page-survey-result">
+
+<div class="wrap">
+	<a href="login-signup.html" class="btn-icon icon-arrow-backward-white btn-back">이전페이지로</a>
+	<div class="score">
+		<div>
+			<span>Score</span>
+			<h3>54</h3>
+		</div>
+	</div>
+	<ul class="nav-tab-fill">
+		<li class="active"><a data-toggle="tab" href="#tab-result" class="btn btn-h36">진단</a></li>
+		<li><a data-toggle="tab" href="#tab-recipe" class="btn btn-h36">처방</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="tab-result" class="tab-pane active tab-result">
+			<div class="chart-hexagon">
+				<!--육각 차트 영역-->
+				<img src="images/temp-chart-hexagon.png">
+			</div>
+			<ul class="list-score">
+				<li class="c-pink">
+					<i></i>
+					<span>유전 원인</span>
+					<div class="bar">
+						<i style="left:5%"></i>
+						<div style="width:81%">81</div>
+					</div>
+				</li>
+				<li class="c-violet">
+					<i></i>
+					<span>염증 원인</span>
+					<div class="bar">
+						<i style="left:45%"></i>
+						<div style="width:45%">45</div>
+					</div>
+				</li>
+				<li class="c-blue">
+					<i></i>
+					<span>영양 원인</span>
+					<div class="bar">
+						<i style="left:45%"></i>
+						<div style="width:45%">45</div>
+					</div>
+				</li>
+				<li class="c-green">
+					<i></i>
+					<span>스트레스 원인</span>
+					<div class="bar">
+						<i style="left:60%"></i>
+						<div style="width:20%">20</div>
+					</div>
+				</li>
+				<li class="c-yellow">
+					<i></i>
+					<span>혈액순환 원인</span>
+					<div class="bar">
+						<i style="left:88%"></i>
+						<div style="width:88%">88</div>
+					</div>
+				</li>
+				<li class="c-gray">
+					<i></i>
+					<span>기저질환 원인</span>
+					<div class="bar">
+						<i style="left:95%"></i>
+						<div style="width:100%">100</div>
+					</div>
+				</li>
+			</ul><!--//list-cause-->
+			<div class="table-chart">
+				<ul class="nav-tab-fill">
+					<li class="active"><a data-toggle="tab" href="#tab-table" class="btn btn-h32">테이블</a></li>
+					<li><a data-toggle="tab" href="#tab-chart" class="btn btn-h32">차트</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="tab-table" class="tab-pane active tab-table">
+						<table>
+							<thead>
+								<tr>
+									<th>날짜</th>
+									<th>점수</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2021.06.05</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2021.05.20</td>
+									<td>56</td>
+								</tr>
+								<tr>
+									<td>2021.04.14</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>2021.04.05</td>
+									<td>100</td>
+								</tr>
+								<tr>
+									<td>2021.03.20</td>
+									<td>56</td>
+								</tr>
+								<tr>
+									<td>2021.03.14</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!--//tab-table-->
+					<div id="tab-chart" class="tab-pane tab-chart">
+						<h3>
+							<i></i>
+							<span>43</span>
+						</h3>
+						<div class="chart-line">
+							<!--라인 차트 영역-->
+							<img src="images/temp-chart-line.png">
+						</div>
+					</div><!--//tab-chart-->
+				</div><!--//tab-content-->
+			</div><!--//table-chart-->
+			<img src="images/result-hair.jpg" class="photo">
+			<div class="section-text">
+				<div>
+					<h3>결과 분석</h3>
+					<button type="button" data-toggle="collapse" href="#result-text" class="btn-collapse collapsed" aria-expanded="false"></button>
+				</div>
+				<p id="result-text" class="collapse text-partial" aria-expanded="false">00님의 현재 테스트 결과는 같은 연령대  성별군 백분율 79%입니다. 이는 모발과 두피 상태에 문제가 있으면 세심한 관리가 필요한 결과치 입니다. 날씨가 건조해지는 겨울이면 두피에 각질이 많아져 혈액순환이 원활히 이뤄지지 못해 탈모를 유발할 수 있습니다. 이렇게 탈모가 진행되기 시작하면 일시적인 증상이 아니라 지속적인 문제를 일으킬 수 있으므로 올바른 두피건강관리가 필요합니다.</p>
+			</div>
+		</div>
+		<div id="tab-recipe" class="tab-pane tab-recipe">
+			<div class="section-text">
+				<h3>혈액순환과 유전적 소인은 관리가 중요!</h3>
+				<p>00님의 경우, 건조한 두피에 각질이 많아져 혈액순환이 원활히 이뤄지지 못해 탈모를 유발할 수 있습니다. 이렇게 탈모가 진행되기 시작하면 일시적인 증상이 아니라 지속적인 문제를 일으킬 수 있으므로 올바른 두피건강관리가 필요합니다. 또한 스트레스는 탈모를 촉진하는 원인 중하나로 일상에 적절한 운동과 테라피를 통한 해소가 필요합니다.</p>
+			</div>
+			<ul class="list-solution">
+				<li class="item">
+					<h3>
+						<i></i>
+						<span>00님께 추천하는 홈 케어 솔루션</span>
+					</h3>
+					<div>
+						<ul class="list-horizontal text-white" style="width:540px"><!--목록 개수 추가/삭제하는 경우 1개당 너비 : +-160px-->
+							<li style="background-image:url(images/result-home-1.jpg)">
+								<a href="solution.html">
+									<div>
+										<h5>겨울사막 엠플</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-home-2.jpg)">
+								<a href="solution.html">
+									<div>
+										<h5>영양 에센스</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-home-3.jpg)">
+								<a href="solution.html">
+									<div>
+										<h5>두피 팩</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+						</ul><!--//list-horizontal-->
+					</div>
+				</li><!--//item-->
+				<li class="item">
+					<h3>
+						<i></i>
+						<span>00님께 추천하는 헤어샵 케어 서비스</span>
+					</h3>
+					<div>
+						<ul class="list-horizontal text-white" style="width:540px"><!--목록 개수 추가/삭제하는 경우 1개당 너비 : +-160px-->
+							<li style="background-image:url(images/result-shop-1.jpg)">
+								<a href="care.html">
+									<div>
+										<h5>순환 케어</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-shop-2.jpg)">
+								<a href="care.html">
+									<div>
+										<h5>각질 케어</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-shop-3.jpg)">
+								<a href="care.html">
+									<div>
+										<h5>지압 테라피</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+						</ul><!--//list-horizontal-->
+					</div>
+				</li><!--//item-->
+				<li class="item">
+					<h3>
+						<i></i>
+						<span>00님께 추천하는 클리닉 케어 서비스</span>
+					</h3>
+					<div>
+						<ul class="list-horizontal text-black" style="width:540px"><!--목록 개수 추가/삭제하는 경우 1개당 너비 : +-160px-->
+							<li style="background-image:url(images/result-clinic-1.jpg)">
+								<a href="clinic.html">
+									<div>
+										<h5>A 클리닉<br>두피 순환 고주파</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-clinic-2.jpg)">
+								<a href="clinic.html">
+									<div>
+										<h5>B 의원<br>두피 스켈링&보습</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+							<li style="background-image:url(images/result-clinic-3.jpg)">
+								<a href="clinic.html">
+									<div>
+										<h5>C 뷰티<br>두피愛 식이</h5>
+										<p>4.6 &#9733;</p>
+									</div>
+								</a>
+							</li>
+						</ul><!--//list-horizontal-->
+					</div>
+				</li><!--//item-->
+			</ul><!--//list-solution-->
+			<div class="action">
+				<h3>다양한 무료 서비스로<br>탈모를 관리하세요</h3>
+				<p>문진과 헤어 케어 내역을 주기적으로 저장/분석하여<br>자신의 머리 상태를 꾸준하게 관리 할 수 있습니다.</p>
+				<div class="button-group">
+					<a href="check.html" class="btn">간이진단기 등록</a>
+					<a href="login-signup.html" class="btn">회원가입</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--//wrap-->
+
+</body>
+</html>

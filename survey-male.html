@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<title>설문 : 탈모관리서비스</title>
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<script src="js/IE9.js"></script>
+<![endif]-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+$( document ).ready( function(){
+	$( ".carousel" ).slick({
+		dots: false,
+		arrows: false,
+		centerMode: true,
+		centerPadding: '19px',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		infinite: false
+	});
+	$('.slick-prev').click(function(){
+		$('.carousel').slick('slickPrev');
+	});
+	$('.slick-next').click(function(){
+		$('.carousel').slick('slickNext');
+	});
+}).on('afterChange', function(event, slick, currentSlide) {
+	if (slick.currentSlide == 0) {
+		$( ".js-btn-prev" ).addClass( "disabled" );
+	}
+	if (slick.currentSlide == 1) {
+		$( ".js-btn-prev" ).removeClass( "disabled" );
+	}
+	if (slick.currentSlide >= slick.slideCount - slick.options.slidesToShow) {
+		$( ".js-btn-submit" ).addClass( "active" );
+		$( ".js-btn-prev" ).addClass( "disabled" );
+	}
+});
+</script>
+</head>
+
+<body class="page-survey">
+
+<div class="wrap">
+	<ul class="carousel">
+		<li>
+			<h3>당신은 평소<br>충분한 수면을<br>취하고 있나요?</h3>
+			<p>대부분의 성인은 하루 평균<br>7~9시간의 수면이 필요합니다.</p>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>부모 혹은<br>조부모 중<br>탈모가 있나요?</h3>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>당신은 하루에<br>한번 이상<br>머리를 감나요?</h3>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>당신의 피부는<br>계절에 따라<br>민감해 지나요?</h3>
+			<p>For example skin concern,<br>such as acne or rosacea, dryness.</p>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>당신은 긴장과<br>스트레스를<br>자주 느끼나요?</h3>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>샴푸 후 20시간<br>이내에 유분이<br>올라오나요?</h3>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+		<li>
+			<h3>빗질을 자주<br>하는 편 인가요?</h3>
+			<div class="button-group">
+				<button type="button" value="Y" class="slick-next">Yes</button>
+				<button type="button" value="N" class="slick-next">No</button>
+			</div>
+		</li>
+	</ul><!--//carousel-->
+	<button type="button" class="slick-prev js-btn-prev disabled">Prev</button>
+	<button type="submit" class="btn btn-h56 btn-fill-primary js-btn-submit">결과보기</button>
+</div><!--//wrap-->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+// ---
+// modules - images
+// ---
+
+img,video{max-width:100%;height:auto}
+// .icon-arrow-upward{
+//   @include bgi(icon/arrow-upward);
+// }
+.icon-arrow-backward{
+  @include bgi(icon/arrow-backward);
+}
+.icon-arrow-backward-white{
+  @include bgi(icon/arrow-backward-white);
+}
+.icon-heart{
+  @include bgi(icon/heart);
+}
+.icon-reply{
+  @include bgi(icon/reply);
+}
+.icon-share{
+  @include bgi(icon/share);
+}
+.icon-about{
+  @include bgi(icon/about);
+}
+.icon-location{
+  @include bgi(icon/location);
+}
+.icon-chat{
+  @include bgi(icon/chat);
+}
+.icon-people{
+  @include bgi(icon/people);
+}
+.icon-schedule{
+  @include bgi(icon/schedule);
+}
+.icon-alram{
+  @include bgi(icon/alram);
+}
+.icon-cart{
+  @include bgi(icon/cart);
+}
+.icon-hello{
+  @include bgi(icon/hello);
+}
+.icon-calendar{
+  @include bgi(icon/calendar);
+}
