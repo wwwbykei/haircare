@@ -777,7 +777,9 @@ body[class*="page-signup"]{
 			@include fw-bold;
 			color:#fff;
 		}
-		.text-partial{
+		p{
+			font-size:1.4rem;
+  			line-height: 2rem;
 			color:#998FA2;
 		}
 	}

@@ -475,7 +475,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey-result .section-text h3 { font-size: 1.6rem; font-weight: 700; color: #fff; }
 
-.page-survey-result .section-text .text-partial { color: #998FA2; }
+.page-survey-result .section-text p { font-size: 1.4rem; line-height: 2rem; color: #998FA2; }
 
 .page-survey-result .tab-recipe .section-text { margin-top: 24px; }
 
