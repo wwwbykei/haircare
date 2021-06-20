@@ -62,7 +62,10 @@ body[class*="page-signup"]{
 		top:-10.8vh;
 	}
 	.align-bottom{
-		bottom:12vh;
+		bottom:4vh;
+		@include large{
+			bottom:12vh;
+		}
 		label,select,.btn{
 			display:block;
 			width:100%;
@@ -177,13 +180,13 @@ body[class*="page-signup"]{
 	form{
 		margin-top:12px;
 	}
-	@media (max-height:580px){
+	@include small{
 		.btn{
 			width:100%;
 			margin:32px 0;
 		}
 	}
-	@media (min-height:581px){
+	@include large{
 		.btn{
 			position:absolute;
 			right:6.4%;
@@ -352,8 +355,14 @@ body[class*="page-signup"]{
 	}
 }
 .page-survey-begin{
+	padding-bottom:260px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 	.bgimg-male,.bgimg-female{
-		height:67vh;
+		min-height: 100%;
 		@include radius-bottom-left(80px);
 		@include bgs(cover);
 		@include bgpos(50%,0);
@@ -365,11 +374,9 @@ body[class*="page-signup"]{
 		@include bgi(survey-female,jpg);
 	}
 	.text{
-		display:flex;
-		flex-direction: column;
-		height:33vh;
-		align-items: center;
-		justify-content: center;
+		height:260px;
+		margin-bottom: -260px;
+		padding-top:32px;
 		text-align:center;
 	}
 	span{
@@ -993,7 +1000,7 @@ body[class*="page-signup"]{
 		}
 	}
 	.list-links + img{
-		margin:0;
+		margin-top:0;
 		@include radius-top(0);
 	}
 	img{

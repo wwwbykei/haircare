@@ -25,7 +25,7 @@ input[type=password]{
 }
 
 select{
-  padding:17px 48px !important;
+  padding:17px 48px 17px 24px !important;
 	@include radius(26px !important);
   @include bg(#E6E6E6 !important);
   @include bgi(icon/expand-more-fill,png);

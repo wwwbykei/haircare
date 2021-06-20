@@ -92,7 +92,7 @@ input[type=text], input[type=password], input[type=search], input[type=number], 
 
 input[type=password] { -webkit-text-security: disc; }
 
-select { padding: 17px 48px !important; border-radius: 26px !important; background-color: #E6E6E6 !important; background-image: url(../images/icon/expand-more-fill.png) !important; background-repeat: no-repeat; background-size: 12px !important; background-position: right 28px top 50% !important; font-size: 1.4rem !important; line-height: 1.8rem !important; text-align: center !important; text-align-last: center; }
+select { padding: 17px 48px 17px 24px !important; border-radius: 26px !important; background-color: #E6E6E6 !important; background-image: url(../images/icon/expand-more-fill.png) !important; background-repeat: no-repeat; background-size: 12px !important; background-position: right 28px top 50% !important; font-size: 1.4rem !important; line-height: 1.8rem !important; text-align: center !important; text-align-last: center; }
 
 .form-group { position: relative; padding-top: 16px; }
 
@@ -215,7 +215,9 @@ img, video { max-width: 100%; height: auto; }
 
 body[class*="page-signup"] .text { position: relative; top: -10.8vh; }
 
-body[class*="page-signup"] .align-bottom { bottom: 12vh; }
+body[class*="page-signup"] .align-bottom { bottom: 4vh; }
+
+@media screen and (min-height: 581px) { body[class*="page-signup"] .align-bottom { bottom: 12vh; } }
 
 body[class*="page-signup"] .align-bottom label, body[class*="page-signup"] .align-bottom select, body[class*="page-signup"] .align-bottom .btn { display: block; width: 100%; }
 
@@ -259,9 +261,9 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-check form { margin-top: 12px; }
 
-@media (max-height: 580px) { .page-check .btn { width: 100%; margin: 32px 0; } }
+@media screen and (max-height: 580px) { .page-check .btn { width: 100%; margin: 32px 0; } }
 
-@media (min-height: 581px) { .page-check .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; } }
+@media screen and (min-height: 581px) { .page-check .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; } }
 
 .score { position: relative; height: 208px; background-image: url(../images/bg-result.jpg) !important; background-repeat: no-repeat; background-size: cover; background-position: 50% 0 !important; }
 
@@ -319,13 +321,15 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-check-result .section-text .text-partial { color: #998FA2; }
 
-.page-survey-begin .bgimg-male, .page-survey-begin .bgimg-female { height: 67vh; border-bottom-left-radius: 80px; background-size: cover; background-position: 50% 0 !important; }
+.page-survey-begin { padding-bottom: 260px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+.page-survey-begin .bgimg-male, .page-survey-begin .bgimg-female { min-height: 100%; border-bottom-left-radius: 80px; background-size: cover; background-position: 50% 0 !important; }
 
 .page-survey-begin .bgimg-male { background-image: url(../images/survey-male.jpg) !important; background-repeat: no-repeat; }
 
 .page-survey-begin .bgimg-female { background-image: url(../images/survey-female.jpg) !important; background-repeat: no-repeat; }
 
-.page-survey-begin .text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 33vh; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; }
+.page-survey-begin .text { height: 260px; margin-bottom: -260px; padding-top: 32px; text-align: center; }
 
 .page-survey-begin span { font-size: 1.1rem; text-transform: uppercase; color: #A3A9AF; }
 
@@ -563,7 +567,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-care-clinic .list-links span { display: block; margin-top: 8px; font-size: 1.3rem; color: #78849E; }
 
-.page-care-clinic .list-links + img { margin: 0; border-top-right-radius: 0; border-top-left-radius: 0; }
+.page-care-clinic .list-links + img { margin-top: 0; border-top-right-radius: 0; border-top-left-radius: 0; }
 
 .page-care-clinic img { display: block; margin: 20px auto 0; border-radius: 40px; }
 
