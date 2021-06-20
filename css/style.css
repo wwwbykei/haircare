@@ -259,7 +259,9 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-check form { margin-top: 12px; }
 
-.page-check .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; }
+@media (max-height: 580px) { .page-check .btn { width: 100%; margin: 32px 0; } }
+
+@media (min-height: 581px) { .page-check .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; } }
 
 .score { position: relative; height: 208px; background-image: url(../images/bg-result.jpg) !important; background-repeat: no-repeat; background-size: cover; background-position: 50% 0 !important; }
 

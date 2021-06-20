@@ -177,12 +177,20 @@ body[class*="page-signup"]{
 	form{
 		margin-top:12px;
 	}
-	.btn{
-		position:absolute;
-		right:6.4%;
-		left:6.4%;
-		bottom:4.12vh;
-		width:87.2%;
+	@media (max-height:580px){
+		.btn{
+			width:100%;
+			margin:32px 0;
+		}
+	}
+	@media (min-height:581px){
+		.btn{
+			position:absolute;
+			right:6.4%;
+			left:6.4%;
+			bottom:4.12vh;
+			width:87.2%;
+		}
 	}
 }
 .score{
