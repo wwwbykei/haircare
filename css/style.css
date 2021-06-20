@@ -70,7 +70,7 @@ table { border-spacing: 0; }
 
 .btn-icon:hover { opacity: .6; }
 
-.btn-back { position: absolute; top: 12px; left: 12px; z-index: 10; }
+.btn-back { position: fixed; top: 12px; left: 12px; z-index: 10; }
 
 .collapse { display: none; }
 
@@ -113,6 +113,14 @@ select { padding: 17px 48px 17px 24px !important; border-radius: 26px !important
 .form-field:placeholder-shown ~ .form-label { top: 30px; font-size: 1.6rem !important; cursor: text; }
 
 .form-label, .form-field:focus ~ .form-label { display: block; position: absolute; top: 0; font-size: 12px !important; color: #9b9b9b; -webkit-transition: 0.2s; transition: 0.2s; }
+
+.form-file label { width: 100%; text-align: left; }
+
+.form-file input[type=text] ~ label { bottom: 0; }
+
+.form-file input[type=text] { padding-right: 36px; background-image: url(../images/icon/plus.png) !important; background-repeat: no-repeat; background-size: 14px; background-position: right 4px top 50% !important; }
+
+.form-hidden { overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; clip: rect(0, 0, 0, 0); border: 0; }
 
 img, video { max-width: 100%; height: auto; }
 

@@ -97,7 +97,31 @@ select{
   color: #9b9b9b;
   transition: 0.2s;
 }
-
+.form-file{
+  label{
+    width:100%;
+    text-align:left;
+  }
+  input[type=text] ~ label{
+    bottom:0;
+  }
+  input[type=text]{
+    padding-right:36px;
+    @include bgi(icon/plus);
+    @include bgs(14px);
+    @include bgpos(right 4px,top 50%);
+  }
+}
+.form-hidden{
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
 
 // .form-item{.rel;.mt(@gap-mobile);
 // 	@media @desktop{.mt(@gap-desktop)}

@@ -14,6 +14,18 @@
 <script src="js/respond.min.js"></script>
 <script src="js/IE9.js"></script>
 <![endif]-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+$( document ).ready( function(){
+	var fileTarget = $('.js-file');
+	fileTarget.on('change', function(){
+		if(window.FileReader){
+			var filename = $(this)[0].files[0].name;
+		}
+		$(this).siblings('.js-file-name').val(filename);
+	});
+});
+</script>
 </head>
 
 <body class="page-check">
@@ -22,8 +34,9 @@
 	<a href="signup-select.html" class="btn-icon icon-arrow-backward btn-back">이전페이지로</a>
 	<h3>간이진단폼</h3>
 	<form>
-		<div class="form-group">
-			<input type="file" id="check-photo" class="form-field" placeholder=" ">
+		<div class="form-group form-file">
+			<input type="text" class="form-field js-file-name" placeholder=" " disabled>
+			<input type="file" id="check-photo" class="form-hidden js-file">
 			<label for="check-photo" class="form-label">진단 이미지 첨부</label>
 		</div>
 		<div class="form-group">
