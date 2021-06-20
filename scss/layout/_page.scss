@@ -411,7 +411,10 @@ body[class*="page-signup"]{
 		overflow:hidden;
 	}
 	.carousel{
-		margin-top:7vh;
+		margin-top:12px;
+		@include large{
+			margin-top:7vh;
+		}
 	}
 	.slick-track{
 		display: flex;
@@ -426,7 +429,7 @@ body[class*="page-signup"]{
 		min-height:400px;
 		margin-right:5px;
 		margin-left:5px;
-		padding:11vh 32px;
+		padding:8vh 32px;
 		@include radius;
 		@include bg(#fff);
 		@include box-shadow(0,20px,30px,rgba(157,137,177,.1));
