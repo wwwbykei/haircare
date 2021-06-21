@@ -31,7 +31,7 @@ $( document ).ready( function(){
 <body class="page-check">
 
 <div class="wrap">
-	<a href="signup-select.html" class="btn-icon icon-arrow-backward btn-back">이전페이지로</a>
+	<a href="javascript:history.back()" class="btn-icon icon-arrow-backward btn-back">이전페이지로</a>
 	<h3>간이진단폼</h3>
 	<form>
 		<div class="form-group form-file">
@@ -55,7 +55,7 @@ $( document ).ready( function(){
 			<input type="text" id="check-thickness" class="form-field" placeholder=" ">
 			<label for="check-thickness" class="form-label">모발굵기</label>
 		</div>
-		<button type="submit" class="btn btn-h52 btn-fill-primary">결과보기</button>
+		<button type="button" class="btn btn-h52 btn-fill-primary" onclick="location.href='check-result.html'">결과보기</button>
 	</form>
 </div><!--//wrap-->
 

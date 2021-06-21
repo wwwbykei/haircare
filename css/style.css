@@ -365,17 +365,37 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey .slick-slide .button-group { right: 0; left: 0; }
 
-.page-survey .slick-slide .button-group button { width: 62px; height: 62px; border-radius: 50%; background-color: #8A56AC; text-align: center; line-height: 62px; font-size: 1.4rem; font-style: italic; color: #fff; }
+.page-survey .slick-slide .button-group button { width: 104px; height: 104px; padding: 10px; border-radius: 50%; text-align: center; }
 
-.page-survey .slick-slide .button-group button:last-child { margin-left: 18%; }
+.page-survey .slick-slide .button-group button:last-child { margin-left: 10%; }
 
-.page-survey .slick-slide .button-list { display: inline-block; left: 50%; width: 108px; margin-left: -54px; text-align: left; }
+.page-survey .slick-slide .button-group button:hover, .page-survey .slick-slide .button-group button.active { background-color: #ede6f3; }
+
+.page-survey .slick-slide .button-group button:hover > span, .page-survey .slick-slide .button-group button.active > span { background-color: #d6c3e2; }
+
+.page-survey .slick-slide .button-group button span { display: block; border-radius: 50%; }
+
+.page-survey .slick-slide .button-group button > span { width: 100%; height: 100%; padding: 10px; }
+
+.page-survey .slick-slide .button-group button > span span { width: 100%; height: 100%; background-color: #8A56AC; line-height: 64px; font-size: 1.4rem; font-style: italic; color: #fff; }
+
+.page-survey .slick-slide .button-list { display: inline-block; left: 50%; width: 120px; margin-left: -60px; text-align: left; }
 
 .page-survey .slick-slide .button-list li:not(:first-child) { margin-top: 20px; }
 
-.page-survey .slick-slide .button-list i { display: inline-block; width: 18px; height: 18px; border-radius: 50%; background-color: #8A56AC; text-align: center; font-size: 1.2rem; line-height: 2rem; vertical-align: middle; font-style: italic; color: #fff; }
+.page-survey .slick-slide .button-list .slick-next:hover div, .page-survey .slick-slide .button-list .slick-next:target div { background-color: #ede6f3; }
 
-.page-survey .slick-slide .button-list span { margin-left: 20px; font-size: 1.4rem; vertical-align: middle; font-weight: 600; }
+.page-survey .slick-slide .button-list .slick-next:hover div > span, .page-survey .slick-slide .button-list .slick-next:target div > span { background-color: #d6c3e2; }
+
+.page-survey .slick-slide .button-list .slick-next div { display: inline-block; width: 34px; height: 34px; padding: 4px; border-radius: 50%; text-align: center; font-size: 1.4rem; line-height: 2.1rem; vertical-align: middle; font-style: italic; color: #fff; }
+
+.page-survey .slick-slide .button-list .slick-next div span { display: block; border-radius: 50%; }
+
+.page-survey .slick-slide .button-list .slick-next div > span { width: 100%; height: 100%; padding: 4px; }
+
+.page-survey .slick-slide .button-list .slick-next div > span span { width: 100%; height: 100%; background-color: #8A56AC; }
+
+.page-survey .slick-slide .button-list .slick-next > span { margin-left: 8px; font-size: 1.4rem; vertical-align: middle; font-weight: 600; }
 
 .page-survey .slick-current { height: 64vh; opacity: 1; }
 
@@ -517,7 +537,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey-result .list-horizontal li:last-child { margin-right: 40px; }
 
-.page-survey-result .list-horizontal li a { display: block; }
+.page-survey-result .list-horizontal li a { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .page-survey-result .list-horizontal li div { position: absolute; right: 20px; bottom: 24px; left: 20px; font-weight: 700; }
 
