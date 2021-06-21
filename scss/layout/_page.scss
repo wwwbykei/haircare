@@ -437,8 +437,12 @@ body[class*="page-signup"]{
 		opacity:.6;
 		@include transition(0.5s ease);
 		h3{
-			font-size:3.2rem;
-			line-height:4rem;
+			font-size:2.4rem;
+			line-height:2.8rem;
+			@include large{
+				font-size:3.2rem;
+				line-height:4rem;
+			}
 			@include fw-bold;
 			color:$c-violet-dark;
 		}
@@ -450,7 +454,7 @@ body[class*="page-signup"]{
 		}
 		.button-group,.button-list{
 			position:absolute;
-			bottom:17%;
+			bottom:8.6vh;
 		}
 		.button-group{
 			right:0;
@@ -462,7 +466,7 @@ body[class*="page-signup"]{
 				@include radius-oval;
 				text-align:center;
 				&:last-child{
-					margin-left:10%;
+					margin-left:4%;
 				}
 				&:hover,&.active{
 					@include bg(lighten($c-primary,42%));
@@ -491,18 +495,26 @@ body[class*="page-signup"]{
 			}
 		}
 		.button-list{
-			display: inline-block;
+			overflow: hidden;
+			// display: inline-block;
 			left:50%;
-			width:120px;
-			margin-left:-60px;
-			text-align:left;
-			li{
-				&:not(:first-child){
-					margin-top:20px;
+			margin-left:-120px;
+			button{
+				float:left;
+				width:100px;
+				margin-right:10px;
+				margin-left:10px;
+				text-align:left;
+				&:nth-child(odd){
+					clear:both;
 				}
-			}
-			.slick-next{
-				&:hover,&:target{
+				&:nth-child(n+3){
+					margin-top:1.2vh;
+					@include large{
+						// margin-top:1.6vh;
+					}
+				}
+				&:hover,&.active{
 					div{
 						@include bg(lighten($c-primary,42%));
 						> span{
@@ -538,7 +550,7 @@ body[class*="page-signup"]{
 					}
 				}
 				> span{
-					margin-left:8px;
+					// margin-left:8px;
 					font-size:1.4rem;
 					@include valign;
 					@include fw-semibold;
@@ -550,18 +562,16 @@ body[class*="page-signup"]{
 		height:64vh;
 		opacity:1;
 	}
-	.slick-prev,.btn-fill-primary{
+	.slick-prev,.slick-next,.btn-fill-primary{
 		position:absolute;
 		bottom:3.7vh;
 	}
-	.slick-prev{
-		left:0;
-		padding:19px 24px 19px 54px;
-		@include radius-right;
+	.slick-prev,.slick-next{
 		@include bg($c-primary);
-		@include bgi(icon/arrow-backward-white);
-		@include bgs(16px);
-		@include bgpos(24px,50%);
+		@include bgs(12px);
+		@include large{
+			@include bgs(16px);
+		}
 		font-size:1.4rem;
 		line-height:1.8rem;
 		font-style:italic;
@@ -570,13 +580,42 @@ body[class*="page-signup"]{
 			display: none;
 		}
 	}
+	.slick-prev{
+		left:0;
+		padding:12px 16px 12px 32px;
+		@include large{
+			padding:19px 24px 19px 54px;
+		}
+		@include radius-right;
+		@include bgi(icon/arrow-backward-white);
+		@include bgpos(12px,50%);
+		@include large{
+			@include bgpos(24px,50%);
+		}
+	}
+	.slick-next{
+		right:0;
+		padding:12px 32px 12px 16px;
+		@include large{
+			padding:19px 54px 19px 24px;
+		}
+		@include radius-left;
+		@include bgi(icon/arrow-forward-white);
+		@include bgpos(right 12px,top 50%);
+		@include large{
+			@include bgpos(right 24px,top 50%);
+		}
+	}
 	.btn-fill-primary{
 		display: none;
 		left:50%;
-		width:280px;
-		margin-left:-140px;
+		width:120px;
+		margin-left:-60px;
 		&.active{
 			display:inline-block;
+		}
+		@include small{
+			padding:12px 16px;
 		}
 	}
 }
