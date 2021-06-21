@@ -17,9 +17,12 @@
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/tab.js"></script>
 <script>
+//set tab activate
 $( document ).ready( function(){
 	var hash = location.hash.replace(/^#/, '');
-	$('.nav-tab-fill a[href="#tab-' + hash + '"]').addClass("active");
+	if( $('.nav-tab-fill').find('a[href="#tab-' + hash + '"]').length !== 0){
+		$('.nav-tab-fill li').find('a[href="#tab-' + hash + '"]').parent().addClass( "active" );
+	}
 	$( "#tab-" + hash ).addClass("active");
 });
 </script>
