@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Noto+Sans+KR:400,500,700&display=swap&subset=korean");
-/* etc */
 * { -webkit-overflow-scrolling: touch; }
 
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -45,7 +44,6 @@ table { border-spacing: 0; }
 
 .wrap { position: relative; min-width: 320px; max-width: 540px; height: 100%; margin-right: auto; margin-left: auto; }
 
-/* @keyframes buzz { 50% { -webkit-transform: translateX(3px) rotate(2deg); transform: translateX(3px) rotate(2deg); } 100% { -webkit-transform: translateX(-3px) rotate(-2deg); transform: translateX(-3px) rotate(-2deg); } } @keyframes jello { from, 11.1%, to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 22.2% { -webkit-transform: skewX(-12.5deg) skewY(-12.5deg); transform: skewX(-12.5deg) skewY(-12.5deg); } 33.3% { -webkit-transform: skewX(6.25deg) skewY(6.25deg); transform: skewX(6.25deg) skewY(6.25deg); } 44.4% { -webkit-transform: skewX(-3.125deg) skewY(-3.125deg); transform: skewX(-3.125deg) skewY(-3.125deg); } 55.5% { -webkit-transform: skewX(1.5625deg) skewY(1.5625deg); transform: skewX(1.5625deg) skewY(1.5625deg); } 66.6% { -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg); transform: skewX(-0.78125deg) skewY(-0.78125deg); } 77.7% { -webkit-transform: skewX(0.390625deg) skewY(0.390625deg); transform: skewX(0.390625deg) skewY(0.390625deg); } 88.8% { -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg); transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } } */
 .btn { display: inline-block; text-align: center; word-break: break-all; white-space: nowrap; vertical-align: middle; }
 
 .btn-h32 { padding: 8px 12px; border-radius: 16px; font-size: 1.2rem; line-height: 1.6rem; }
@@ -241,7 +239,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-login-signup { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #241332; }
 
-.page-login-signup .wrap { padding: 0 6.4%; text-align: center; }
+.page-login-signup .wrap { padding: 0 24px; text-align: center; }
 
 .page-login-signup .nav-tab-fill { display: inline-block; margin-top: 9.8vh; }
 
@@ -259,11 +257,11 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-login-signup .tab-login .btn { width: 100%; margin-top: 10.3vh; }
 
-.page-login-signup .tab-signup .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; }
+.page-login-signup .tab-signup .btn { position: absolute; right: 24px; left: 24px; bottom: 4.12vh; width: calc(100% - 48px); }
 
 .page-check { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #fff; }
 
-.page-check .wrap { padding: 0 6.4%; text-align: center; }
+.page-check .wrap { padding: 0 24px; text-align: center; }
 
 .page-check h3 { display: inline-block; width: 80px; margin-top: 9.8vh; padding: 8px 12px; border-radius: 16px; background-color: #9599B3; text-align: center; font-size: 1.2rem; line-height: 1.6rem; word-break: break-all; white-space: nowrap; vertical-align: middle; color: #fff; }
 
@@ -271,7 +269,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 @media screen and (max-height: 580px) { .page-check .btn { width: 100%; margin: 32px 0; } }
 
-@media screen and (min-height: 581px) { .page-check .btn { position: absolute; right: 6.4%; left: 6.4%; bottom: 4.12vh; width: 87.2%; } }
+@media screen and (min-height: 581px) { .page-check .btn { position: absolute; right: 24px; left: 24px; bottom: 4.12vh; width: calc(100% - 48px); } }
 
 .score { position: relative; height: 208px; background-image: url(../images/bg-result.jpg) !important; background-repeat: no-repeat; background-size: cover; background-position: 50% 0 !important; }
 
@@ -357,7 +355,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey .slick-track { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-top: 20px; padding-bottom: 40px; }
 
-.page-survey .slick-slide { position: relative; height: 56.4vh; min-height: 400px; margin-right: 5px; margin-left: 5px; padding: 8vh 32px; border-radius: 80px; background-color: #fff; -webkit-box-shadow: 0 20px 30px rgba(157, 137, 177, 0.1); box-shadow: 0 20px 30px rgba(157, 137, 177, 0.1); text-align: center; opacity: .6; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+.page-survey .slick-slide { position: relative; height: 56.4vh; min-height: 400px; margin-right: 5px; margin-left: 5px; padding: 8vh 32px; border-radius: 80px; background-color: #fff; -webkit-box-shadow: 0 20px 30px rgba(157, 137, 177, 0.1); box-shadow: 0 20px 30px rgba(157, 137, 177, 0.1); text-align: center; opacity: .6; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
 
 .page-survey .slick-slide h3 { font-size: 3.2rem; line-height: 4rem; font-weight: 700; color: #241332; }
 
@@ -531,7 +529,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey-result .action h3, .page-survey-result .action p, .page-survey-result .action .btn { color: #fff; }
 
-.page-survey-result .action h3, .page-survey-result .action p { margin: 0 6.4%; text-align: center; }
+.page-survey-result .action h3, .page-survey-result .action p { margin: 0 24px; text-align: center; }
 
 .page-survey-result .action h3 { font-size: 3rem; font-weight: 700; }
 
@@ -667,7 +665,7 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-solution .list-product .btn-icon { position: absolute; bottom: 12px; right: 12px; width: 30px; height: 30px; border-radius: 50%; background-color: #462928; background-size: 14px; }
 
-.page-solution .manual { margin: 52px 6.4%; }
+.page-solution .manual { margin: 52px 24px; }
 
 .page-solution .manual h5 i { display: inline-block; width: 32px; height: 32px; background-size: contain; background-position: 50% 50% !important; vertical-align: middle; }
 

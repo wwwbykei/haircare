@@ -127,7 +127,6 @@
 @mixin dotum{font-family:'돋움',dotum}
 @mixin montserrat{font-family:'Montserrat'}
 
-/* etc */
 @mixin pointer($property:pointer){cursor:$property}
 @mixin valign($property:middle){vertical-align:$property}
 // @mixin valign{@include valign();}

@@ -102,7 +102,7 @@ body[class*="page-signup"]{
 	left:0;
 	@include bg($c-violet-dark);
 	.wrap{
-		padding:0 6.4%;
+		padding:0 24px;
 		text-align:center;
 	}
 	.nav-tab-fill{
@@ -144,10 +144,10 @@ body[class*="page-signup"]{
 	.tab-signup{
 		.btn{
 			position:absolute;
-			right:6.4%;
-			left:6.4%;
+			right:24px;
+			left:24px;
 			bottom:4.12vh;
-			width:87.2%;
+			width:calc(100% - 48px);
 		}
 	}
 }
@@ -159,7 +159,7 @@ body[class*="page-signup"]{
 	left:0;
 	@include bg(#fff);
 	.wrap{
-		padding:0 6.4%;
+		padding:0 24px;
 		text-align:center;
 	}
 	h3{
@@ -189,10 +189,10 @@ body[class*="page-signup"]{
 	@include large{
 		.btn{
 			position:absolute;
-			right:6.4%;
-			left:6.4%;
+			right:24px;
+			left:24px;
 			bottom:4.12vh;
-			width:87.2%;
+			width:calc(100% - 48px);
 		}
 	}
 }
@@ -435,7 +435,7 @@ body[class*="page-signup"]{
 		@include box-shadow(0,20px,30px,rgba(157,137,177,.1));
 		text-align:center;
 		opacity:.6;
-		@include transition(0.5s ease-in-out);
+		@include transition(0.5s ease);
 		h3{
 			font-size:3.2rem;
 			line-height:4rem;
@@ -887,7 +887,7 @@ body[class*="page-signup"]{
 			color:#fff;
 		}
 		h3,p{
-			margin:0 6.4%;
+			margin:0 24px;
 			text-align:center;
 		}
 		h3{
@@ -1240,7 +1240,7 @@ body[class*="page-signup"]{
 		}
 	}
 	.manual{
-		margin:52px 6.4%;
+		margin:52px 24px;
 		h5{
 			i{
 				display:inline-block;
