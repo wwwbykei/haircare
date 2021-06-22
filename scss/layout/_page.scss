@@ -570,60 +570,62 @@ body[class*="page-signup"]{
 		height:64vh;
 		opacity:1;
 	}
-	.slick-prev,.slick-next,.btn-fill-primary{
-		position:absolute;
-		bottom:3.7vh;
-	}
-	.slick-prev,.slick-next{
-		@include bg($c-primary);
-		@include bgs(12px);
-		@include large{
-			@include bgs(16px);
+	.carousel{
+		& ~ .slick-prev,& ~ .slick-next,& ~ .btn-fill-primary{
+			position:absolute;
+			bottom:3.7vh;
 		}
-		font-size:1.4rem;
-		line-height:1.8rem;
-		font-style:italic;
-		color:#fff;
-		&.disabled{
+		& ~ .slick-prev,& ~ .slick-next{
+			@include bg($c-primary);
+			@include bgs(12px);
+			@include large{
+				@include bgs(16px);
+			}
+			font-size:1.4rem;
+			line-height:1.8rem;
+			font-style:italic;
+			color:#fff;
+			&.disabled{
+				display: none;
+			}
+		}
+		& ~ .slick-prev{
+			left:0;
+			padding:12px 16px 12px 32px;
+			@include large{
+				padding:19px 24px 19px 54px;
+			}
+			@include radius-right;
+			@include bgi(icon/arrow-backward-white);
+			@include bgpos(12px,50%);
+			@include large{
+				@include bgpos(24px,50%);
+			}
+		}
+		& ~ .slick-next{
+			right:0;
+			padding:12px 32px 12px 16px;
+			@include large{
+				padding:19px 54px 19px 24px;
+			}
+			@include radius-left;
+			@include bgi(icon/arrow-forward-white);
+			@include bgpos(right 12px,top 50%);
+			@include large{
+				@include bgpos(right 24px,top 50%);
+			}
+		}
+		& ~ .btn-fill-primary{
 			display: none;
-		}
-	}
-	.slick-prev{
-		left:0;
-		padding:12px 16px 12px 32px;
-		@include large{
-			padding:19px 24px 19px 54px;
-		}
-		@include radius-right;
-		@include bgi(icon/arrow-backward-white);
-		@include bgpos(12px,50%);
-		@include large{
-			@include bgpos(24px,50%);
-		}
-	}
-	.slick-next{
-		right:0;
-		padding:12px 32px 12px 16px;
-		@include large{
-			padding:19px 54px 19px 24px;
-		}
-		@include radius-left;
-		@include bgi(icon/arrow-forward-white);
-		@include bgpos(right 12px,top 50%);
-		@include large{
-			@include bgpos(right 24px,top 50%);
-		}
-	}
-	.btn-fill-primary{
-		display: none;
-		left:50%;
-		width:120px;
-		margin-left:-60px;
-		&.active{
-			display:inline-block;
-		}
-		@include small{
-			padding:12px 16px;
+			left:50%;
+			width:120px;
+			margin-left:-60px;
+			&.active{
+				display:inline-block;
+			}
+			@include small{
+				padding:12px 16px;
+			}
 		}
 	}
 }

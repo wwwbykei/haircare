@@ -403,31 +403,31 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey .slick-current { height: 64vh; opacity: 1; }
 
-.page-survey .slick-prev, .page-survey .slick-next, .page-survey .btn-fill-primary { position: absolute; bottom: 3.7vh; }
+.page-survey .carousel ~ .slick-prev, .page-survey .carousel ~ .slick-next, .page-survey .carousel ~ .btn-fill-primary { position: absolute; bottom: 3.7vh; }
 
-.page-survey .slick-prev, .page-survey .slick-next { background-color: #8A56AC; background-size: 12px; font-size: 1.4rem; line-height: 1.8rem; font-style: italic; color: #fff; }
+.page-survey .carousel ~ .slick-prev, .page-survey .carousel ~ .slick-next { background-color: #8A56AC; background-size: 12px; font-size: 1.4rem; line-height: 1.8rem; font-style: italic; color: #fff; }
 
-@media screen and (min-height: 581px) { .page-survey .slick-prev, .page-survey .slick-next { background-size: 16px; } }
+@media screen and (min-height: 581px) { .page-survey .carousel ~ .slick-prev, .page-survey .carousel ~ .slick-next { background-size: 16px; } }
 
-.page-survey .slick-prev.disabled, .page-survey .slick-next.disabled { display: none; }
+.page-survey .carousel ~ .slick-prev.disabled, .page-survey .carousel ~ .slick-next.disabled { display: none; }
 
-.page-survey .slick-prev { left: 0; padding: 12px 16px 12px 32px; border-bottom-right-radius: 80px; border-top-right-radius: 80px; background-image: url(../images/icon/arrow-backward-white.png) !important; background-repeat: no-repeat; background-position: 12px 50% !important; }
+.page-survey .carousel ~ .slick-prev { left: 0; padding: 12px 16px 12px 32px; border-bottom-right-radius: 80px; border-top-right-radius: 80px; background-image: url(../images/icon/arrow-backward-white.png) !important; background-repeat: no-repeat; background-position: 12px 50% !important; }
 
-@media screen and (min-height: 581px) { .page-survey .slick-prev { padding: 19px 24px 19px 54px; } }
+@media screen and (min-height: 581px) { .page-survey .carousel ~ .slick-prev { padding: 19px 24px 19px 54px; } }
 
-@media screen and (min-height: 581px) { .page-survey .slick-prev { background-position: 24px 50% !important; } }
+@media screen and (min-height: 581px) { .page-survey .carousel ~ .slick-prev { background-position: 24px 50% !important; } }
 
-.page-survey .slick-next { right: 0; padding: 12px 32px 12px 16px; border-bottom-left-radius: 80px; border-top-left-radius: 80px; background-image: url(../images/icon/arrow-forward-white.png) !important; background-repeat: no-repeat; background-position: right 12px top 50% !important; }
+.page-survey .carousel ~ .slick-next { right: 0; padding: 12px 32px 12px 16px; border-bottom-left-radius: 80px; border-top-left-radius: 80px; background-image: url(../images/icon/arrow-forward-white.png) !important; background-repeat: no-repeat; background-position: right 12px top 50% !important; }
 
-@media screen and (min-height: 581px) { .page-survey .slick-next { padding: 19px 54px 19px 24px; } }
+@media screen and (min-height: 581px) { .page-survey .carousel ~ .slick-next { padding: 19px 54px 19px 24px; } }
 
-@media screen and (min-height: 581px) { .page-survey .slick-next { background-position: right 24px top 50% !important; } }
+@media screen and (min-height: 581px) { .page-survey .carousel ~ .slick-next { background-position: right 24px top 50% !important; } }
 
-.page-survey .btn-fill-primary { display: none; left: 50%; width: 120px; margin-left: -60px; }
+.page-survey .carousel ~ .btn-fill-primary { display: none; left: 50%; width: 120px; margin-left: -60px; }
 
-.page-survey .btn-fill-primary.active { display: inline-block; }
+.page-survey .carousel ~ .btn-fill-primary.active { display: inline-block; }
 
-@media screen and (max-height: 580px) { .page-survey .btn-fill-primary { padding: 12px 16px; } }
+@media screen and (max-height: 580px) { .page-survey .carousel ~ .btn-fill-primary { padding: 12px 16px; } }
 
 .page-survey-result { background-color: #241332; }
 
