@@ -381,13 +381,11 @@ body[class*="page-signup"] .align-bottom .btn:last-child { margin-top: 16px; }
 
 .page-survey .slick-slide .button-group button > span span { width: 100%; height: 100%; background-color: #8A56AC; line-height: 64px; font-size: 1.4rem; font-style: italic; color: #fff; }
 
-.page-survey .slick-slide .button-list { overflow: hidden; left: 50%; margin-left: -120px; }
+.page-survey .slick-slide .button-list { overflow: hidden; left: 50%; width: 120px; margin-left: -60px; }
 
-.page-survey .slick-slide .button-list button { float: left; width: 100px; margin-right: 10px; margin-left: 10px; text-align: left; }
+.page-survey .slick-slide .button-list button { display: block; text-align: left; }
 
-.page-survey .slick-slide .button-list button:nth-child(odd) { clear: both; }
-
-.page-survey .slick-slide .button-list button:nth-child(n+3) { margin-top: 1.2vh; }
+@media (min-height: 741px) { .page-survey .slick-slide .button-list button { margin-top: 1.2vh; } }
 
 .page-survey .slick-slide .button-list button:hover div, .page-survey .slick-slide .button-list button.active div { background-color: #ede6f3; }
 

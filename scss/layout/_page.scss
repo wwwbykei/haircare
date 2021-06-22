@@ -498,22 +498,30 @@ body[class*="page-signup"]{
 			overflow: hidden;
 			// display: inline-block;
 			left:50%;
-			margin-left:-120px;
+			width:120px;
+			margin-left:-60px;
 			button{
-				float:left;
-				width:100px;
-				margin-right:10px;
-				margin-left:10px;
-				text-align:left;
-				&:nth-child(odd){
-					clear:both;
-				}
-				&:nth-child(n+3){
+				display: block;
+				// float:left;
+				// width:120px;
+				// @include large{
+				// 	margin-top:.6vh;
+				// }
+				@media (min-height:741px){
 					margin-top:1.2vh;
-					@include large{
-						// margin-top:1.6vh;
-					}
 				}
+				// margin-right:10px;
+				// margin-left:10px;
+				text-align:left;
+				// &:nth-child(odd){
+				// 	clear:both;
+				// }
+				// &:nth-child(n+3){
+				// 	margin-top:1.2vh;
+				// 	@include large{
+				// 		// margin-top:1.6vh;
+				// 	}
+				// }
 				&:hover,&.active{
 					div{
 						@include bg(lighten($c-primary,42%));
